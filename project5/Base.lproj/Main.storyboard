@@ -68,6 +68,9 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="FIQ-ez-Ui2"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="taxSliderChanges:" destination="BYZ-38-t0r" eventType="valueChanged" id="Aka-fV-QlG"/>
+                                </connections>
                             </slider>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="$0.00" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zao-Rc-gDY">
                                 <rect key="frame" x="45" y="114" width="300" height="80"/>
@@ -77,7 +80,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="80"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -96,6 +99,7 @@
                     <navigationItem key="navigationItem" title="Tip Calculator" id="AR4-tr-QeG"/>
                     <connections>
                         <outlet property="amoutBeforeText_Textfield" destination="zao-Rc-gDY" id="Q5R-aI-WhT"/>
+                        <outlet property="taxSlider" destination="Yl6-96-yeg" id="rkb-Hg-j5Q"/>
                         <outlet property="tipAmount" destination="GBf-cI-20g" id="8Ml-NF-ie6"/>
                         <outlet property="tipPercent" destination="AWE-F1-1To" id="Qlg-io-6ef"/>
                         <outlet property="totalAfterTax" destination="qd6-9t-MGW" id="GnS-NO-yHc"/>
