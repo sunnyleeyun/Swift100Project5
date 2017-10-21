@@ -9,7 +9,11 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+  @IBOutlet weak var amoutBeforeText_Textfield: UITextField!
+  @IBOutlet weak var tipPercent: UILabel!
+  @IBOutlet weak var tipAmount: UILabel!
+  @IBOutlet weak var totalAfterTax: UILabel!
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
