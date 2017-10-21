@@ -22,7 +22,7 @@ class ViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
+    addDoneButton()
   }
 
   override func didReceiveMemoryWarning() {
@@ -30,8 +30,9 @@ class ViewController: UIViewController {
     // Dispose of any resources that can be recreated.
   }
 
-  @IBAction func taxSliderChanges(_ sender: Any) {
-    
+  @IBAction func taxSliderChanges(_ sender: UISlider) {
+    self.tip = round(sender.value * 100)/100
+    self.calculateTip()
   }
   
   func addDoneButton() {
